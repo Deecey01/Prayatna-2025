@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="landingPage.css" />
+    <title>Prayatna-IIT Guwahati</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href=""><img src="images\prayatna_logo.png" alt="logo" class="Prayatna-logo nav-items" /></a>
+            <div class="navbar-right">
+                <div class="Events nav-items otherItemsThenRegister"><a href="">Events</a></div>
+                <div class="Speakers nav-items otherItemsThenRegister"><a href="">Speakers</a></div>
+                <div class="AboutUs nav-items otherItemsThenRegister"><a href="">About us</a></div>
+                <div class="Register nav-items"><a href="">Register</a></div>
+            </div>
+        </div>
+    </header>
+    <div class="midcontainer">
+        <div class="text-midcontainer">
+            <p id="above-prayatna">Abcd Presents</p>
+            <p id="prayatna">Prayatna 2025</p>
+            <p id="below-prayatna">
+                <br> The annual socio-welfare festival of IIT Guwahati,<br /> where everyone comes together
+            </p>
+            <br><br>
+            <div class="Rn-btn">
+                <p id="RegisterNow"><a href="">REGISTER NOW</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <img src="images\lotus.png" alt="lotus" id="lotus" class="svg" />
+        <div class="bar_below_lotus"></div>
+        <div class="last_bar_below_lotus"></div>
+    </div>
+    <div class="homeview">
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:10%;left:5%;">
+          <circle cx="5vw" cy="5vw" r="0.8vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.4vw" stroke="white" stroke-width="0.08vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:14%;left:18%;">
+          <circle cx="5vw" cy="5vw" r="1.6vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.8vw" stroke="white" stroke-width="0.16vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:12%;left:45%;">
+          <circle cx="5vw" cy="5vw" r="0.8vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.4vw" stroke="white" stroke-width="0.08vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:40%;left:55%;">
+          <circle cx="5vw" cy="5vw" r="0.8vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.4vw" stroke="white" stroke-width="0.08vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:34%;left:63%;">
+          <circle cx="5vw" cy="5vw" r="1.2vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.6vw" stroke="white" stroke-width="0.2vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:38%;left:70%;">
+          <circle cx="5vw" cy="5vw" r="1.6vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.8vw" stroke="white" stroke-width="0.16vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:24%;left:85%;">
+          <circle cx="5vw" cy="5vw" r="0.8vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.4vw" stroke="white" stroke-width="0.08vw" fill="#FFD98D" />
+      </svg>
+    </div>
+    <!-- <div class="extraspace">
+    </div> -->
+    <script src="anime.min.js" type="text/javascript"></script>
+    <script>
+        function randomValues() {
+            anime({
+                targets: '.lights',
+                translateX: function() {
+                    return anime.random(0, 30);
+                },
+                translateY: function() {
+                    return anime.random(0, 30);
+                },
+                easing: 'easeInOutQuad',
+                duration: 3000,
+                complete: randomValues
+            });
+        }
+
+        randomValues();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayatna-IIT Guwahati</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #FFFEE9;
+        }
+        
+        @font-face {
+            font-family: Satoshi;
+            src: url(./fonts/Satoshi-Variable.ttf);
+        }
+        
+        .swiper {
+            margin-top: -50vh;
+            height: 300vh;
+            overflow: visible;
+        }
+        
+        .swiper .swiper-wrapper {
+            align-items: center;
+            overflow: visible;
+        }
+        
+        .swiper .swiper-slide {
+            border-radius: 5px;
+            height: 19.5vw !important;
+            transition: 0.2s;
+            overflow: visible;
+            text-align: center;
+        }
+        
+        .swiper .swiper-slide.active {
+            height: 21vw !important;
+            position: relative;
+            z-index: 999 !important;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            z-index: 100;
+            position: absolute !important;
+            top: 80%;
+            transform: translateY(-50%);
+            opacity: 0.65;
+            transition: 0.2s;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            opacity: 1;
+        }
+        
+        .prev svg,
+        .next svg {
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        .prev svg path,
+        .next svg path {
+            fill: rgb(0, 0, 0);
+        }
+        
+        .prev {
+            left: 25px !important;
+        }
+        
+        .next {
+            right: 25px;
+        }
+        
+        .swiper .pagination {
+            margin-left: 8px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4vw;
+            z-index: 10;
+            background-color: transparent;
+        }
+        
+        .swiper .pagination span {
+            font-size: 0;
+            opacity: 1;
+            margin: 0px 6px !important;
+        }
+        
+        .swiper .pagination span.swiper-pagination-bullet-active {
+            background-color: transparent;
+        }
+        
+        .swiper .pagination span.swiper-pagination-bullet {
+            background-color: transparent;
+            display: none;
+        }
+        
+        .swiper-slide-img {
+            border-radius: 1vw;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            transition: 0.2s opacity ease-in-out;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        .swiper-slide-cont {
+            width: 80vw;
+            height: 80vh;
+            text-align: center;
+            font-family: Satoshi, sans-serif;
+            font-size: 2vw;
+            color: #E09064;
+            font-weight: 500;
+            transform: translateX(-40vw);
+        }
+        
+        .swiper-slide-title {
+            color: #49581D;
+            font-weight: 500;
+            text-align: center;
+            font-family: Satoshi, sans-serif;
+            font-size: 2.5vw;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
+        
+        .swiper-slide-cont-wrapper {
+            width: 100%;
+            transform: translateX(50%);
+            overflow: visible;
+            opacity: 0;
+            transition: 0.2s opacity ease-in-out;
+        }
+        
+        .swiper .swiper-slide.active .swiper-slide-cont-wrapper {
+            opacity: 1;
+        }
+        
+        .swiper .swiper-slide.active .swiper-slide-img {
+            opacity: 1;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            font-size: 24px;
+            font-family: Satoshi;
+            color: #DA7C4C;
+        }
+        
+        .linkContainer {
+            width: 120px;
+            height: 40px;
+            margin: auto;
+            border: solid 2px #DA7C4C;
+            border-radius: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .linkContainer:hover {
+            background-color: #ffd98d;
+            transition: all 0.3s ease-in;
+        }
+        
+        @media (orientation: portrait) {
+            .swiper-slide-cont {
+                font-size: 5vw;
+            }
+            .swiper-slide-title {
+                font-size: 7vw;
+            }
+            .swiper .swiper-slide {
+                height: 30vw !important;
+            }
+            .swiper .swiper-slide.active {
+                height: 37vw !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/book-swap.jpg);">
+                </div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Book Swap</div>
+                        Share the joy of reading at the Prayatna 2024 Book Swap Event! Organised by the Academic Initiative Club, bring a book you love and exchange it for a new treasure. Let's spread the love of literature and make new friends! An opportunity for bibliophiles
+                        to connect by swapping their books. This will not only save money but also build connectedness in the community.
+                        <br>
+                        <br>
+                        <div>
+                            Venue: Conference Hall Lounge <br> Date: 18 Mar 2024 <br> Time: 11 AM onwards</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/quiz.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Quiz</div>
+                        Encouraging people to become more informed and aware of the various issues affecting their communities and the world. Get ready to test your knowledge and compete with the brightest minds! The Academic Initiative Club presents the Quiz Competition, happening
+                        on 18th February as part of Prayatna 2024. Join us from 3pm to 4pm for a fun and educational event with a prize worth 6k.
+                        <br><br>
+                        <div>
+                            Venue: Conference Hall 2 <br> Date: 18 Feb 2024 <br> Time: 3 PM onwards</div>
+                        <div class="linkContainer">
+                            <a href="https://forms.office.com/r/ixcvyqxnKY" class="nav-link">Register</a>
+                        </div>
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/debate.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Debates</div>
+                        An opportunity to share ideas and perspectives and learn more about different sides of an issue. Put your speaking skills to the test and join the academic debate. "The Rebuttal" is here, brought to you by the Academic Initiative Club as part of Prayatna
+                        2024. On 19th Feb at 2pm-3pm, express your views and thoughts on the topic: "Do extra-curricular activities help us in tackling academic pressure, or do they increase the pressure on us?" With a prize worth 8k, it's time to sharpen
+                        your arguments and show us what you got!
+                        <br><br>
+                        <div>
+                            Venue: Conference Hall Lounge <br> Date: 19 Feb 2024 <br> Time: 2 PM onwards</div>
+                        <div class="linkContainer">
+                            <a href="https://forms.office.com/r/8eEGAjkjzX" class="nav-link">Register</a>
+                        </div>
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/bsfband.png);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">BSF Band</div>
+                        To empower youth and promote selfless service, what can be better than the spirit of patriotism? Presenting to you a band performance by the BSF.
+                        <br><br>
+                        <div>
+                            Venue: MCH <br> Date: 17 Feb 2024 <br> Time: 6:45 PM onwards</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/komedy.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Comedy night</div>
+                        Get ready to have your funny bone tickled! With funny anecdotes, and witty comments, this night will surely be a great stress buster.
+                        <br><br>
+                        <div>
+                            Venue: Auditorium <br> Date: 19 Feb 2024 <br> Time: 4:30 PM onwards</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/hackathon.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Hackathon</div>
+                        A platform where participants from diverse backgrounds come together to brainstorm, develop, and prototype innovative solutions to various social issues. These solutions range from developing a mobile application to help people access resources in their
+                        communities to creating a website to help connect people with similar interests.
+                        <br><br>
+                        <div>
+                            Venue: Conference Hall 3 <br> Date: 19 Feb 2024 <br> Time: 9 PM onwards</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/pwdtalent.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Ability Unleashed</div>
+                        These shows are used to promote community engagement as well as to raise funds for the organization. This will be a good source of motivation for everyone.
+                        <br><br>
+                        <div>
+                            Venue: Mini Audi <br> Date: 19 Feb 2024 <br> Time: 1 PM - 4 PM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/ap.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Acharya Prashant Session</div>
+                        A prominent social reformer and educator of true spirituality in the world today. He speaks strongly for female empowerment, protection of the natural world, compassion for animals, Vedantic wisdom, for living rightly, and campaigns against superstition.
+                        <br> He is an IIT-IIM alumnus, Ex-Civil Servant and has authored 100 books on the topics of Karma, Joy, Love, Marriage, Spirituality, & more. Join us in an intriguing session with him on
+                        <br><br>
+                        <div>
+                            Venue: Auditorium <br> Date: 19 Feb 2024 <br> Time: 6 PM - 8 PM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/oldagehome.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Old Age Home Visit</div>
+                        Visiting an old age home is a great way to give back to the community and create a meaningful experience for everyone involved. This event aims to bring joy to the elderly by engaging them in fun activities, creating lasting memories, and providing much-needed
+                        companionship.
+                        <br><br>
+                        <div>
+                            Venue: New Sac <br> Date: 15 Feb 2024 <br> Time: 6 PM to 9 PM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/cyclothon.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Cyclothon</div>
+                        For spreading awareness about HIV/AIDS & other STDs among Campus Junta and to practice a healthy lifestyle, The Red Ribbon Club of the Students Welfare Board, IIT Guwahati will conduct "Cyclothon: A race to spread HIV/AIDS awareness" in PRAYATNA.Participants
+                        will also be given attractive merch and refreshments. We will also install interactive displays, to raise awareness about AIDS and HIV.
+                        <br><br>
+                        <div>
+                            Venue: Old Sac <br> Date: 18 Feb 2024 <br> Time: 6 AM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/blooddonation.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Blood Donation Camp</div>
+                        A blood donation camp in IITG in collaboration with NGOs as a small attempt to help save lives
+                        <br><br>
+                        <div>
+                            Venue: IITG Hospital <br> Date: 18 & 19 Feb 2024 <br> Time: 9 AM to 11 AM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/selfdefence.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Self Defence Workshop</div>
+                        The workshop typically includes both discussion and physical exercises that teach self-defense techniques. During the workshop, participants learn the basics of self-protection, such as assessing a situation and defending themselves physically if necessary.
+                        <br><br>
+                        <div>
+                            Venue: Old Sac <br> Date: 18 & 19 Feb 2024 <br> Time: 9 AM to 11 AM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/socialawareness.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Social Awareness Workshop</div>
+                        The Social Service Club, IIT Guwahati in collaboration with ‘The Buddha Institute’ brings to you, a "Social Awareness Workshop". Over the course of this workshop, you'll find a variety of Panel Discussions, sessions by Sector Leaders and Social Entrepreneurs,
+                        and Q&A sessions lined up. Don't miss this chance to learn about different social experiences, opportunity in the sector, and scope of professional engagement through their curriculum!
+                        <br><br>
+                        <div>
+                            Venue: Conference Hall 4 <br> Date: 19 Feb 2024 <br> Time: 10 AM to 1 PM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/yoga.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Yoga and meditation workshop</div>
+                        “Yoga is the solution for all the mental chaos and necessary for overall wellbeing.” A yoga workshop organized to assimilate peace in daily life of students.
+                        <br><br>
+                        <div>
+                            Venue: Yoga Hall <br> Date: 19 Feb 2024 <br> Time: 7 AM</div>
+                        <div class="linkContainer">
+                            <a href="https://forms.gle/yz2ZyvyMPcHzJ5qu9" class="nav-link">Register</a>
+                        </div>
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/openmic.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Open Mic</div>
+                        An open mic event to discuss and explore various social issues. Engaging conversations and debates about topics such as racism, poverty, sexism, and more. Everyone will be welcome to attend and share their perspectives and opinions.
+                        <br><br>
+                        <div>
+                            Venue: Swimming pool Area <br> Date: 17 Feb 2024 <br> Time: 9 PM to 11 PM</div>
+                        <div class="linkContainer">
+                            <a href="https://forms.gle/8kdpJzgbWjdMxZbY6" class="nav-link">Register</a>
+                        </div>
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/speedmentoring.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Speed Mentoring</div>
+                        During this program, you’ll have the opportunity to interact with and learn from an experienced senior for a quick 1-1 session. You’ll get to ask questions, gain valuable insights and build connections.
+                        <br> Note: This event is only open to first- and second-year bachelor's degree students.
+                        <br><br>
+                        <div>
+                            Venue: Conference Hall Lounge <br> Date: 19 Feb 2024 <br> Time: 10 AM to 12 AM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/facepainting.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Face Painting</div>
+                        A fun workshop where volunteers will paint faces of participants as an attempt to promote lgbtq rights
+                        <br><br>
+                        <div>
+                            Venue: Conference Hall Lounge <br> Date: 19 Feb 2024 <br> Time: 2 PM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img" style="background-image: url(./images/samiksha.jpg);"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Samiksha</div>
+                        A women empowerment workshop which will have an interactive session and a workshop on menstrual awareness by Project Baala.
+                        <br><br>
+                        <div>
+                            Venue: Mini Auditorium <br> Date: 18 Feb 2024 <br> Time: 2 PM - 5 PM</div>
+                        <!-- <div class="linkContainer">
+                            <a href="#" class="nav-link">Register</a>
+                        </div> -->
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination"></div>
+
+    <div class="prev">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 24L17.43 22.607L11.85 17H24V15L11.85 15L17.43 9.427L16 8L8 16L16 24Z" fill="#49581D"/>
+                <path d="M16 1.99999C18.7689 1.99999 21.4757 2.82108 23.778 4.35942C26.0803 5.89776 27.8747 8.08426 28.9343 10.6424C29.9939 13.2006 30.2712 16.0155 29.731 18.7313C29.1908 21.447 27.8574 23.9416 25.8995 25.8995C23.9416 27.8574 21.447 29.1908 18.7313 29.731C16.0155 30.2712 13.2006 29.9939 10.6424 28.9343C8.08426 27.8747 5.89776 26.0803 4.35942 23.778C2.82108 21.4757 1.99999 18.7689 1.99999 16C2.00423 12.2883 3.48059 8.72977 6.10518 6.10518C8.72977 3.48059 12.2883 2.00423 16 1.99999ZM16 28C18.3734 28 20.6934 27.2962 22.6668 25.9776C24.6402 24.6591 26.1783 22.7849 27.0865 20.5922C27.9948 18.3995 28.2324 15.9867 27.7694 13.6589C27.3064 11.3311 26.1635 9.19294 24.4853 7.51471C22.807 5.83648 20.6688 4.69359 18.3411 4.23057C16.0133 3.76755 13.6005 4.00519 11.4078 4.91344C9.21508 5.82169 7.34094 7.35976 6.02236 9.33315C4.70378 11.3065 3.99999 13.6266 3.99999 16C4.0037 19.1815 5.26917 22.2315 7.5188 24.4812C9.76844 26.7308 12.8185 27.9963 16 28Z" fill="#49581D"/>
+                </svg>
+
+
+    </div>
+    <div class="next">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8L14.57 9.393L20.15 15H8V17H20.15L14.57 22.573L16 24L24 16L16 8Z" fill="#49581D" />
+                <path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C29.9958 19.7117 28.5194 23.2702 25.8948 25.8948C23.2702 28.5194 19.7117 29.9958 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C27.9963 12.8185 26.7308 9.76845 24.4812 7.51882C22.2316 5.26918 19.1815 4.00371 16 4.00001Z"
+                    fill="#49581D" />
+                </svg>
+
+    </div>
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: true,
+            grabCursor: true,
+            centeredSlides: true,
+            slideActiveClass: "active",
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev"
+            },
+            autoplay: {
+                enabled: true,
+                delay: 5000
+            },
+            // Media
+            breakpoints: {
+                // when window width is >= 320px
+                500: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap");
+@font-face {
+    font-family: Satoshi;
+    src: url(./fonts/Satoshi-Variable.ttf);
+}
+
+@font-face {
+    font-family: Nephilm;
+    src: url(./fonts/Nephilm.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff5d3;
+}
+
+.navbar {
+    height: 15vh;
+    width: 100vw;
+    background-color: #da7c4cd9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav-items {
+    margin: auto 32px auto 32px;
+    color: #fffee9;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 80px;
+    cursor: pointer;
+    display: block;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+.line {
+    width: 33px;
+    background-color: #fffee9;
+    height: 3px;
+    margin: 5px 3px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #fffee9;
+}
+
+.otherItemsThenRegister a:hover {
+    color: #ffd98d;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 128px;
+}
+
+.Prayatna-logo {
+    height: 45px;
+    margin-left: 20%;
+}
+
+.Register {
+    border-style: solid;
+    height: 43px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    border-width: 2px;
+}
+
+.aboutUsBox {
+    height: 43vw;
+    width: 80vw;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 10%;
+}
+
+#aboutUs_img {
+    position: absolute;
+    left: 10%;
+    width: 34%;
+    z-index: 2;
+}
+
+#box_AboutUs {
+    position: absolute;
+    top: 6%;
+    width: 64%;
+    left: 21%;
+}
+
+#swb_with_text {
+    position: absolute;
+    left: 57%;
+    top: 15%;
+    width: 16%;
+    transition: width;
+    transition-duration: 1s;
+}
+
+#swb_with_text:hover {
+    position: absolute;
+    left: 57%;
+    top: 15%;
+    width: 18%;
+    transition: width;
+    transition-duration: 1s;
+}
+
+.textInAboutUs {
+    width: 300px;
+    /* height: 200px; */
+    background-color: #ffd98d;
+    position: absolute;
+    left: 37.9%;
+    top: 40%;
+    width: 47%;
+    z-index: 3;
+}
+
+.insideText_AboutUs {
+    font-family: "Satoshi", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.swbText {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-left: 23px;
+    color: #49581d;
+}
+
+.swbBelowText {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-top: 3%;
+    padding-left: 23px;
+    color: #49581d;
+    font-size: 1.15vw;
+    padding-bottom: 2em;
+}
+
+.middlepage {
+    width: 100%;
+    height: 275vh;
+    background-color: #FFD98D;
+    position: absolute;
+    top: 100vh;
+    text-align: center;
+    z-index: -3;
+    background-image: url("./images/bg-about-us.svg");
+    background-size: 100%;
+}
+
+.pastEvents {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #49581d;
+    font-size: 4vw;
+    margin-top: 20px;
+    padding-bottom: 4%;
+}
+
+.middlepageItems {
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 4.5vw;
+    color: #DA7C4C66;
+    padding: 4%;
+    z-index: 10;
+}
+
+.middlepageItems:hover {
+    color: #FFFEE9;
+    transition: all;
+    transition-duration: 0.6s;
+    cursor: default;
+}
+
+.img_middlePage {
+    height: 60%;
+    z-index: -1;
+    opacity: 0;
+}
+
+#muskaanImg {
+    position: absolute;
+    top: 1%;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+}
+
+#bloodDonationDriveImg {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+}
+
+#plantationDriveImg {
+    position: absolute;
+    top: 18%;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+}
+
+#peerMentorshipProgramImg {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+}
+
+#floodReliefImg{
+    position: absolute;
+    top: 37%;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+}
+
+#rakshabandhanImg{
+    position: absolute;
+    top: 48%;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+
+}
+
+#halloweenImg{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+
+}
+
+#yogaMeditationImg{
+    position: absolute;
+    top: 65%;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+
+}
+
+#suicidePreventionImg{
+    position: absolute;
+    top: 72%;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    height: 28%;
+
+}
+
+@media only screen and (max-width: 953px) {
+    .navbar {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .navbar-right {
+        flex-direction: column;
+        width: 50%;
+    }
+    .nav-items {
+        margin: auto;
+        position: relative;
+        left: 15vw;
+    }
+    .Prayatna-logo {
+        margin-left: 2%;
+        transition: all 0.3s ease-in;
+    }
+    .h-nav-resp {
+        height: 8vh;
+    }
+    .hamburger {
+        display: block;
+    }
+    .display_resp {
+        display: none;
+    }
+    .middlepage{
+        height: 150vw;
+        transition: all 0.3s ease-in;
+        top: 63vh;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    opacity: 1;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fffee9;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 9vw;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fffee9;
+}
+
+.nav-link:hover {
+    color: #ffd98d;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 1135px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #da7c4cd9;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.Register:hover {
+    background-color: #ffd98d;
+    color: #fffee9;
+    transition: all 0.1s ease-in;
+}
+
+.Register a:hover {
+    color: #fffee9;
+}
+
+.mid-container {
+    width: 100%;
+    height: 230vh;
+    position: relative;
+    z-index: -99;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+@font-face {
+    font-family: Satoshi;
+    src: url(./fonts/Satoshi-Variable.ttf);
+}
+
+.footer-distributed {
+    background: #DA7C4C;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px "Nephilm", cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: lightseagreen;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 0.5;
+    font-family: Satoshi;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: Satoshi;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+    padding-bottom: 20px;
+    margin-left: -25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+#PrayatnaLogoOnLeft {
+    height: 100px;
+}
+
+#swbLogoOnRight {
+    float: right;
+    margin-top: -65px;
+    margin-right: 12px;
+    height: 50px;
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1135px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+        display: block;
+        width: 100vw;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    #swbLogoOnRight {
+        float: none;
+        margin-top: auto;
+        margin-right: auto;
+    }
+}
+.speakers{
+    position: absolute;
+    top: 373vh;
+}
+.footer-distributed{
+    position:absolute;
+    top: 120vw;
+    width: 100%;
+    left: 0;
+}

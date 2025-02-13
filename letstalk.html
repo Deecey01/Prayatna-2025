@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      @font-face {
+        font-family: Satoshi;
+        src: url(./fonts/Satoshi-Variable.ttf);
+      }
+
+      :root {
+        --antime: 0.7s;
+        --cubez: cubic-bezier(0.22, -0.08, 0.32, 1.22);
+      }
+
+      .letsTalk {
+        width: 30vw;
+        height: 10vw;
+        position: relative;
+      }
+
+      .ltcircle {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        transition: var(--antime) all var(--cubez);
+      }
+
+      .ltcircle circle {
+        r: "35%";
+        transition: var(--antime) all var(--cubez);
+      }
+
+      .letstalk-text {
+        font-family: Satoshi, sans-serif;
+        color: #49581d;
+        font-weight: bold;
+        font-size: 3vw;
+        position: absolute;
+        height: 100%;
+        text-align: center;
+        left: 33%;
+        line-height: 10vw;
+        transition: var(--antime) all var(--cubez);
+      }
+
+      .ltplus {
+        height: 3vw;
+        margin: 3.5vw 0;
+        position: absolute;
+        left: 80%;
+        transition: var(--antime) left var(--cubez);
+      }
+
+      .ltplus line {
+        transition: var(--antime) stroke ease-in-out;
+      }
+
+      .ltplus {
+        transition: var(--antime) all var(--cubez);
+      }
+
+      .letsTalk:hover .ltcircle {
+        left: 60%;
+      }
+
+      .letsTalk:hover .ltcircle circle {
+        r: 47%;
+      }
+
+      .letsTalk:hover .ltplus {
+        left: 70%;
+      }
+
+      .letsTalk:hover .ltplus line {
+        stroke: #fffee9;
+      }
+
+      .letsTalk:hover .letstalk-text {
+        left: 5%;
+      }
+
+      .letstalk-nexttext {
+        width: 30vw;
+        height: 10vw;
+        font-family: Satoshi, sans-serif;
+        font-size: 2.1vw;
+        margin-left: 3vw;
+        margin-top: 1vw;
+      }
+
+      .ltcontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        height: 18em;
+        margin-bottom: 0;
+        width: 100vw;
+        background-color: #da7c4c;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+      }
+
+      .logoPlusText {
+        text-align: center;
+        display: table-column;
+        justify-content: center;
+        height: 130px;
+        align-self: center;
+        margin-left: 6%;
+        font-size: 1.2em;
+        
+      }
+
+      #prayatna_logo {
+        height: 6vh;
+      }
+
+      .textbelowlogo {
+        color: #fffee9;
+        size: 100%;
+        margin-top: 0px;
+      }
+
+      .rightItemsOnFooter {
+        height: 74%;
+        width: 22%;
+        align-self: flex-end;
+        position: absolute;
+        right: 8vw;
+        padding-left: 70vw;
+        top: 33px;
+        text-align: right;
+        font-family: Satoshi, sans-serif;
+        color: #fffee9;
+      }
+
+      .paraWithSwb {
+        float: left;
+        font-size: 1.2em;
+        margin-left: 25%;
+        margin-top: 1%;
+      }
+
+      #swb_logo {
+        height: 40px;
+        height: 2.5rem;
+        margin-top: 3%;
+        padding-left: 0.9rem;
+      }
+
+      .logos_right {
+        height: 2.5em;
+        padding: 15px 0 8px 18px;
+      }
+
+      .paraBelowLogos {
+        font-size: 1.2em;
+        margin-top: 2%;
+      }
+      .swbWithLogoInFooter {
+        display: flex;
+      }
+      .linkImages {
+        display: flex;
+        margin-left: 50%;
+      }
+      @media only screen and (max-width: 944px) {
+          footer{
+            flex-direction: column;
+            height: 50vh;
+            transition: all 0.7s ease-in;
+            overflow: hidden;
+          }
+          .rightItemsOnFooter{
+            position: absolute;
+            left: -27%;
+            top: 22%;
+            /* text-align: center; */
+            /* width: 100%; */
+            /* text-align: center; */
+          }
+          .linkImages{
+            margin-left: -10%;
+          }
+          .paraWithSwb{
+            text-align: center;
+            padding-top: 30%;
+          }
+          .logoPlusText{
+            text-align: center;
+            /* margin-right: 11%;
+            padding: 2%; */
+            width: 100%;
+            margin-left: 4rem;
+            margin-top: 10px;
+          }
+          .paraBelowLogos{
+            text-align: center;
+          }
+          #swb_logo{
+            margin-top: 70%;
+          }
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <br /><br /><br />
+    <div class="ltcontainer">
+      <div class="letsTalk">
+        <svg height="100%" width="30%" class="ltcircle" class="ltcircle">
+          <circle cx="50%" cy="50%" r="35%" fill="#DA7C4C" />
+        </svg>
+        <div class="letstalk-text">Let's Talk</div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="43"
+          height="43"
+          viewBox="0 0 43 43"
+          fill="none"
+          class="ltplus"
+        >
+          <line
+            x1="22.5"
+            y1="1.5"
+            x2="22.5"
+            y2="41.5"
+            stroke="#DA7C4C"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <line
+            x1="1.5"
+            y1="20.5"
+            x2="41.5"
+            y2="20.5"
+            stroke="#DA7C4C"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+      <div class="letstalk-nexttext">
+        Feel free to connect with us. Sign up to get event notification and
+        updates
+      </div>
+    </div>
+    <!-- <footer>
+      <div class="”footer-content”">
+        <div class="logoPlusText">
+          <img
+            src="images\prayatna_logo.png"
+            alt="prayatna_logo"
+            id="prayatna_logo"
+          />
+          <p class="textbelowlogo">Prayatna<br />2024</p>
+        </div>
+      </div>
+    </footer> -->
+    <footer>
+      <div class="logoPlusText">
+        <img
+          src="images\prayatna_logo.png"
+          alt="prayatna_logo"
+          id="prayatna_logo"
+        />
+        <p class="textbelowlogo">Prayatna<br />2025</p>
+      </div>
+      <div class="rightItemsOnFooter">
+        <div class="swbWithLogoInFooter">
+          <div class="paraWithSwb">Student Welfare Board<br />IIT Guwahati</div>
+          <img src="images\swb_logo.png" alt="swb_logo" id="swb_logo" />
+        </div>
+
+        <div class="linkImages">
+          <a href=""
+            ><img
+              src="images\linkedIn.png"
+              alt="linkedInLogo"
+              class="logos_right"
+          /></a>
+          <a href=""
+            ><img src="images\emailpic.png" alt="emailLogo" class="logos_right"
+          /></a>
+          <a href=""
+            ><img src="images\bepic.png" alt="beLogo" class="logos_right"
+          /></a>
+        </div>
+            <p class="paraBelowLogos">+918287259810<br/>aditya.des21@iitg.ac.in</p>      
+      </div>
+    </footer>
+  </body>
+</html>

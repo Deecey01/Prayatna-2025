@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayatna-IIT Guwahati</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        @font-face {
+            font-family: Satoshi;
+            src: url(./fonts/Satoshi-Variable.ttf);
+        }
+        
+        .upcoming-events {
+            font-family: Satoshi, sans-serif;
+            font-weight: bold;
+            font-size: 3vw;
+            padding: 0 2vw 3vw 5vw;
+            background-color: #DA7C4C;
+            color: #FFFEE9;
+        }
+        
+        .events-container {
+            height: 60vw;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .events-coll {
+            height: 100%;
+            width: 13%;
+            background-color: #FFFEE9;
+            border: #DA7C4C 0.1vw solid;
+            box-sizing: border-box;
+            writing-mode: vertical-rl;
+            font-family: Satoshi, sans-serif;
+            font-size: 3vw;
+            font-weight: 700;
+            color: #49581D;
+            padding: 3vw 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+            cursor: pointer;
+            z-index: 9;
+        }
+        
+        .events-coll:hover {
+            background-color: #FFD98D;
+            border: #FFD98D 0.1vw solid;
+        }
+        
+        .events-cont {
+            animation: width_inc 0.5s;
+            width: 50%;
+            background-color: #FFFEE9;
+            border: #DA7C4C 0.1vw solid;
+            padding: 3vw 0 3vw 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: width 0.3s ease-in-out;
+            z-index: 1;
+        }
+        
+        .about-ev {
+            font-family: Satoshi, sans-serif;
+            color: rgba(202, 117, 74, 0.8);
+            font-size: 1.4vw;
+            font-weight: 400;
+            width: 100%;
+        }
+        
+        .cont-text {
+            font-family: Satoshi, sans-serif;
+            color: #DA7C4C;
+            font-size: 1.9vw;
+            font-weight: 500;
+            width: 100%;
+            margin-top: 1vw;
+        }
+        
+        .event-content-img {
+            width: 100%;
+        }
+        
+        .inactive {
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .active {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .events-cont-container {
+            width: 38vw;
+            margin: 0 5vw 0 5vw;
+        }
+        
+        .events-cont-inactive {
+            width: 0;
+        }
+        
+        @keyframes width_inc {
+            0% {
+                width: 0%
+            }
+            80% {
+                width: 60%
+            }
+            90% {
+                width: 40%
+            }
+            100% {
+                width: 50%
+            }
+        }
+        
+        .closed_box {
+            display: none;
+        }
+        
+        .open_box {
+            display: block;
+        }
+        
+        .events-coll:focus {
+            background-color: #FFD98D;
+            border: #FFD98D 0.1vw solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-section">
+        <div class="upcoming-events">
+            Upcoming Events
+        </div>
+        <div class="events-container">
+            <div class="events-coll ev1" onclick="displayContent1()"><span>01 &nbsp;&nbsp;Donations Drives</span></div>
+            <div class="events-cont events-cont-inactive" id="ec1-container">
+                <div class="events-cont-container inactive closed_box" id="ec1">
+                    <div class="about-ev">About the event <br></div>
+                    <div class="cont-text">
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text descriptionn
+                    </div>
+                    <br><br><br>
+                    <img src="./images/img1.png" class="event-content-img" alt="">
+                </div>
+            </div>
+            <div class="events-coll ev2" onclick="displayContent2()"><span>02  &nbsp;&nbsp;WORKSHOPS & TALKS </span></div>
+            <div class="events-cont " id="ec2-container">
+                <div class="events-cont-container active open_box" id="ec2">
+                    <div class="about-ev">About the event <br></div>
+                    <div class="cont-text">
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text descriptionn
+                    </div>
+                    <br><br><br>
+                    <img src="./images/img1.png" class="event-content-img" alt="">
+                </div>
+            </div>
+            <div class="events-coll ev3" onclick="displayContent3()"><span>03 &nbsp;&nbsp;cultural events</span></div>
+            <div class="events-cont events-cont-inactive" id="ec3-container">
+                <div class="events-cont-container inactive closed_box" id="ec3">
+                    <div class="about-ev">About the event <br></div>
+                    <div class="cont-text">
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text descriptionn
+                    </div>
+                    <br><br><br>
+                    <img src="./images/img1.png" class="event-content-img" alt="">
+                </div>
+            </div>
+            <div class="events-coll sae"><span>see all events</span></div>
+        </div>
+    </div>
+
+
+    <script>
+        function displayContent1() {
+            document.getElementById("ec1").classList.add("active", "open_box");
+            document.getElementById("ec1").classList.remove("inactive", "closed_box");
+            document.getElementById("ec2").classList.add("inactive");
+            document.getElementById("ec2").addEventListener('transitionend', () => {
+                document.getElementById("ec2").classList.add("closed_box");
+                document.getElementById("ec2").classList.remove("open_box");
+            })
+            document.getElementById("ec2").classList.remove("active");
+            document.getElementById("ec3").classList.add("inactive");
+            document.getElementById("ec3").addEventListener('transitionend', () => {
+                document.getElementById("ec3").classList.add("closed_box");
+                document.getElementById("ec3").classList.remove("open_box");
+            })
+            document.getElementById("ec3-container").classList.add("events-cont-inactive");
+            document.getElementById("ec2-container").classList.add("events-cont-inactive");
+            document.getElementById("ec1-container").classList.remove("events-cont-inactive");
+        }
+
+        function displayContent2() {
+            document.getElementById("ec2").classList.add("active", "open_box");
+            document.getElementById("ec2").classList.remove("inactive", "closed_box");
+            document.getElementById("ec1").classList.add("inactive");
+            document.getElementById("ec1").classList.remove("active");
+            document.getElementById("ec1").addEventListener('transitionend', () => {
+                document.getElementById("ec1").classList.add("closed_box");
+                document.getElementById("ec1").classList.remove("open_box");
+            })
+            document.getElementById("ec3").classList.add("inactive");
+            document.getElementById("ec3").classList.remove("active");
+            document.getElementById("ec3").addEventListener('transitionend', () => {
+                document.getElementById("ec3").classList.add("closed_box");
+                document.getElementById("ec3").classList.remove("open_box");
+            })
+            document.getElementById("ec3-container").classList.add("events-cont-inactive");
+            document.getElementById("ec1-container").classList.add("events-cont-inactive");
+            document.getElementById("ec2-container").classList.remove("events-cont-inactive");
+        }
+
+        function displayContent3() {
+            document.getElementById("ec3").classList.add("active", "open_box");
+            document.getElementById("ec3").classList.remove("inactive", "closed_box");
+            document.getElementById("ec1").classList.add("inactive");
+            document.getElementById("ec1").classList.remove("active");
+            document.getElementById("ec1").addEventListener('transitionend', () => {
+                document.getElementById("ec1").classList.add("closed_box");
+                document.getElementById("ec1").classList.remove("open_box");
+            })
+            document.getElementById("ec2").classList.add("inactive");
+            document.getElementById("ec2").classList.remove("active");
+            document.getElementById("ec2").addEventListener('transitionend', () => {
+                document.getElementById("ec2").classList.add("closed_box");
+                document.getElementById("ec2").classList.remove("open_box");
+            })
+            document.getElementById("ec2-container").classList.add("events-cont-inactive");
+            document.getElementById("ec1-container").classList.add("events-cont-inactive");
+            document.getElementById("ec3-container").classList.remove("events-cont-inactive");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #FFFEE9;
+        }
+        
+        @font-face {
+            font-family: Satoshi;
+            src: url(./fonts/Satoshi-Variable.ttf);
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .marquee {
+            width: 100%;
+            background: #DA7C4C;
+            font-family: Satoshi, sans-serif;
+            font-size: 1.5vw;
+            color: #FFFEE9;
+            --gap: 3vw;
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: var(--gap);
+            text-align: center;
+        }
+        
+        .marquee__content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            gap: var(--gap);
+            min-width: 100%;
+            list-style: none;
+            animation: scroll 14s linear infinite;
+        }
+        
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(calc(-100% - var(--gap)));
+            }
+        }
+        
+        .speakers {
+            width: 100%;
+            padding: 5vw 6vw;
+            box-sizing: border-box;
+        }
+        
+        .sponsors {
+            width: 100%;
+            padding: 3vw 6vw;
+            box-sizing: border-box;
+            font-family: Satoshi, sans-serif;
+        }
+        
+        .speakers-title {
+            font-family: Satoshi, sans-serif;
+            font-weight: 700;
+            font-size: 2.5vw;
+            color: #49581D;
+        }
+        
+        .view-all {
+            line-height: 2.5vw;
+            color: #DA7C4C;
+            font-family: Satoshi, sans-serif;
+            font-size: 1vw;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: #DA7C4C 2px solid;
+            padding-bottom: 1px;
+        }
+        
+        .view-all:hover {
+            color: #FFD98D;
+            border-bottom: #FFD98D 2px solid;
+        }
+        
+        .title-container-se {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .speaker-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 3vw;
+        }
+        
+        .speaker-card {
+            width: 27%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .speaker-card img {
+            width: 100%;
+        }
+        
+        .speaker-card-name {
+            width: fit-content;
+            font-family: Satoshi, sans-serif;
+            color: #49581D;
+            font-weight: 500;
+            font-size: 2vw;
+            margin-top: 1vw;
+            text-align: center;
+        }
+        
+        .speaker-card-sub-title {
+            font-family: Satoshi, sans-serif;
+            font-size: 1.2vw;
+            font-weight: 400;
+            width: fit-content;
+            color: rgba(73, 88, 29, 0.8);
+            text-align: center;
+        }
+        
+        .title-sponsor {
+            width: fit-content;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .title-sponsor img {
+            width: 20vw;
+            border: 1vw solid #FFF5D3;
+            border-radius: 4.3vw;
+            transition: all 0.5s cubic-bezier(0.42, 0, 0.4, 1.86);
+        }
+        
+        .title-sponsor p {
+            width: fit-content;
+            font-family: Satoshi, sans-serif;
+            color: #49581D;
+            font-size: 1.7vw;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .title-sponsor:hover img {
+            width: 22vw;
+            border: 0.9vw solid #FFF5D3;
+            border-radius: 4.7vw;
+        }
+        
+        .sponsors-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .all-sponsors {
+            height: 8vw;
+            min-width: 15vw;
+            border: 2px solid #DA7C4C;
+            border-radius: 3vw;
+            margin: 2vw 2vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="marquee">
+        <ul class="marquee__content">
+            <li>-</li>
+            <li>Workshops</li>
+            <li>-</li>
+            <li>Donation Drives</li>
+            <li>-</li>
+            <li>Workshops</li>
+            <li>-</li>
+            <li>Donation Drives</li>
+            <li>-</li>
+            <li>Workshops</li>
+            <li>-</li>
+            <li>Donation Drives</li>
+            <li>-</li>
+            <li>Workshops</li>
+            <li>-</li>
+            <li>Donation Drives</li>
+        </ul>
+
+        <ul aria-hidden="true" class="marquee__content">
+            <li>-</li>
+            <li>Workshops</li>
+            <li>-</li>
+            <li>Donation Drives</li>
+            <li>-</li>
+            <li>Workshops</li>
+            <li>-</li>
+            <li>Donation Drives</li>
+            <li>-</li>
+            <li>Workshops</li>
+            <li>-</li>
+            <li>Donation Drives</li>
+            <li>-</li>
+            <li>Workshops</li>
+            <li>-</li>
+            <li>Donation Drives</li>
+        </ul>
+    </div>
+    <div class="speakers">
+        <div class="title-container-se">
+            <span class="speakers-title">Speakers in spotlight &nbsp;</span><a href="./speakerSection.html"><span class="view-all">View all</span></a>
+        </div>
+        <div class="speaker-container">
+            <div class="speaker-card">
+                <img src="./images/speaker1.png" alt="">
+                <div class="speaker-card-name">Speaker Name<br></div>
+                <div class="speaker-card-sub-title">Sub Title</div>
+            </div>
+            <div class="speaker-card">
+                <img src="./images/speaker1.png" alt="">
+                <div class="speaker-card-name">Speaker Name<br></div>
+                <div class="speaker-card-sub-title">Sub Title</div>
+            </div>
+            <div class="speaker-card">
+                <img src="./images/speaker1.png" alt="">
+                <div class="speaker-card-name">Speaker Name<br></div>
+                <div class="speaker-card-sub-title">Sub Title</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sponsors">
+        <div class="title-container-se">
+            <span class="speakers-title">Speakers in spotlight</span>
+        </div>
+        <br><br>
+        <div class="title-sponsor">
+            <img src="./images/title-sponsor.png" alt="">
+            <p>Title Sponsor</p>
+        </div>
+        <div class="sponsors-container">
+            <div class="all-sponsors"></div>
+            <div class="all-sponsors"></div>
+            <div class="all-sponsors"></div>
+            <div class="all-sponsors"></div>
+            <div class="all-sponsors"></div>
+            <div class="all-sponsors"></div>
+            <div class="all-sponsors"></div>
+            <div class="all-sponsors"></div>
+        </div>
+    </div>
+</body>
+
+</html>

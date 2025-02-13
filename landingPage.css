@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap");
+@font-face {
+    font-family: Satoshi;
+    src: url(./fonts/Satoshi-Variable.ttf);
+}
+
+@font-face {
+    font-family: Nephilm;
+    src: url(./fonts/Nephilm.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff5d3;
+}
+
+.navbar {
+    height: 110px;
+    width: 100vw;
+    background-color: #da7c4cd9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav-items {
+    margin: auto 32px auto 32px;
+    color: #fffee9;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #fffee9;
+}
+
+.otherItemsThenRegister a:hover {
+    color: #ffd98d;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 128px;
+}
+
+.Prayatna-logo {
+    height: 45px;
+    margin-left: 128px;
+}
+
+.Register {
+    border-style: solid;
+    height: 43px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    border-width: 2px;
+}
+
+.Register:hover {
+    background-color: #ffd98d;
+}
+
+.text-midcontainer {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 11%;
+    color: #49581d;
+}
+
+#above-prayatna {
+    font-size: 2.6vw;
+    font-weight: 500;
+    font-family: Satoshi, sans-serif;
+}
+
+#prayatna {
+    font-size: 10vw;
+    font-weight: 100;
+    font-family: Nephilm, sans-serif;
+}
+
+#below-prayatna {
+    font-family: Satoshi, sans-serif;
+    font-size: 1.5vw;
+    opacity: 80%;
+    font-weight: 400;
+}
+
+.Rn-btn {
+    color: #49581d;
+    border-style: solid;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 1.5vw;
+    border-color: #da7c4cd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 10px #ff450014;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.Rn-btn:hover {
+    background-color: #ffd98d;
+    border-color: #ffd98d;
+}
+
+.Rn-btn p {
+    font-weight: 700;
+    font-size: 1vw;
+    font-family: Satoshi, sans-serif;
+}
+
+.Rn-btn p a {
+    text-decoration: none;
+    color: #49581d;
+}
+
+.bar_below_lotus {
+    height: 5vh;
+    width: 100%;
+    background-color: #da7c4c;
+    position: absolute;
+    bottom: 11vh;
+}
+
+#lotus {
+    position: absolute;
+    width: 70vw;
+    bottom: 11vh;
+    left: 20%;
+}
+
+.last_bar_below_lotus {
+    width: 100%;
+    height: 10vh;
+    background-color: #da7c4c;
+    position: absolute;
+    bottom: 0;
+}
+
+.homeview {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -3;
+}
+
+@media (orientation: portrait) {
+    .Rn-btn {
+        height: 10vw;
+        width: 30vw;
+        border-radius: 4.5vw;
+    }
+    .Rn-btn p {
+        font-size: 3vw;
+    }
+    #below-prayatna {
+        font-size: 4vw;
+        width: 50vw;
+    }
+    #above-prayatna {
+        font-size: 5vw;
+    }
+    #lotus {
+        bottom: 14vh;
+    }
+}
+
+
+/* .svg {
+  position: fixed; /* make sure it stays put so we can see it! */
+
+
+/* 
+  animation: translateOnScroll 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+} */
+
+
+/* .extraspace {
+   height: 1000px;
+  width: 600px;
+  background-color: blue;
+}  */
+
+
+/* @keyframes translateOnScroll {
+  100% {
+    translate: 800px;
+  }
+} */
