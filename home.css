@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #FFFEE9;
+    background-color: #e4f8fa;
     min-height: 100vh;
 }
 
@@ -20,7 +20,7 @@ body {
 .navbar {
     height: 110px;
     width: 100vw;
-    background-color: #da7c4cd9;
+    background-color: #03BBC6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@ body {
 
 .nav-items {
     margin: auto 32px auto 32px;
-    color: #fffee9;
+    color: #e4f8fa;
     font-size: 18px;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -40,11 +40,11 @@ body {
 
 .nav-items a {
     text-decoration: none;
-    color: #fffee9;
+    color: #e4f8fa;
 }
 
 .otherItemsThenRegister a:hover {
-    color: #ffd98d;
+    color: #a0d1d3;
 }
 
 .navbar-right {
@@ -77,14 +77,14 @@ body {
 }
 
 .Register:hover {
-    background-color: #ffd98d;
+    background-color: #a0d1d3;
 }
 
 .text-midcontainer {
     position: absolute;
     margin-top: 160px;
     margin-left: 11%;
-    color: #49581d;
+    color: #136070;
 }
 
 #above-prayatna {
@@ -112,24 +112,24 @@ body {
 }
 
 .Rn-btn {
-    color: #49581d;
+    color: #136070;
     border-style: solid;
     height: 3vw;
     width: 10vw;
     border-radius: 1.5vw;
-    border-color: #da7c4cd9;
+    border-color: #03BBC6;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0px 0px 5px 10px #ff450014;
+    box-shadow: 0px 0px 5px 8px #d3f3f5;
     transition-property: all;
     transition-duration: 0.5s;
 }
 
 .Rn-btn:hover {
-    background-color: #ffd98d;
-    border-color: #ffd98d;
+    background-color: #81e0e5;
+    border-color: #81e0e5;
 }
 
 .Rn-btn p {
@@ -140,13 +140,13 @@ body {
 
 .Rn-btn p a {
     text-decoration: none;
-    color: #49581d;
+    color: #136070;
 }
 
 .bar_below_lotus {
     height: 3vh;
     width: 100%;
-    background-color: #da7c4c;
+    background-color: #03BBC6;
     position: absolute;
     bottom: 6vh;
 }
@@ -161,7 +161,7 @@ body {
 .last_bar_below_lotus {
     width: 100%;
     height: 6vh;
-    background-color: #da7c4c;
+    background-color: #03BBC6;
     position: absolute;
     bottom: 0;
     margin-bottom: -0.5vh;
@@ -206,8 +206,8 @@ body {
     font-weight: bold;
     font-size: 3vw;
     padding: 0 2vw 3vw 5vw;
-    background-color: #DA7C4C;
-    color: #FFFEE9;
+    background-color: #03BBC6;
+    color: #e4f8fa;
 }
 
 .events-container {
@@ -222,14 +222,14 @@ body {
 .events-coll {
     height: 100%;
     width: 13%;
-    background-color: #FFFEE9;
-    border: #DA7C4C 0.1vw solid;
+    background-color: #e4f8fa;
+    border: #03BBC6 0.1vw solid;
     box-sizing: border-box;
     writing-mode: vertical-rl;
     font-family: Satoshi, sans-serif;
     font-size: 3vw;
     font-weight: 700;
-    color: #49581D;
+    color: #136070;
     padding: 3vw 0 0 0;
     display: flex;
     flex-direction: column;
@@ -241,15 +241,15 @@ body {
 }
 
 .events-coll:hover {
-    background-color: #FFD98D;
-    border: #FFD98D 0.1vw solid;
+    background-color: #81e0e5;
+    border: #81e0e5 0.1vw solid;
 }
 
 .events-cont {
     animation: width_inc 0.5s;
     width: 50%;
-    background-color: #FFFEE9;
-    border: #DA7C4C 0.1vw solid;
+    background-color: #e4f8fa;
+    border: #03BBC6 0.1vw solid;
     padding: 3vw 0 3vw 0;
     display: flex;
     flex-direction: column;
@@ -260,7 +260,7 @@ body {
 
 .about-ev {
     font-family: Satoshi, sans-serif;
-    color: rgba(202, 117, 74, 0.8);
+    color: #136070;
     font-size: 1.4vw;
     font-weight: 400;
     width: 100%;
@@ -268,7 +268,7 @@ body {
 
 .cont-text {
     font-family: Satoshi, sans-serif;
-    color: #DA7C4C;
+    color: #136070;
     font-size: 1.9vw;
     font-weight: 500;
     width: 100%;
@@ -322,8 +322,8 @@ body {
 }
 
 .events-coll:focus {
-    background-color: #FFD98D;
-    border: #FFD98D 0.1vw solid;
+    background-color: #a0d1d3;
+    border: #a0d1d3 0.1vw solid;
 }
 
 
@@ -335,10 +335,10 @@ a {
 
 .marquee {
     width: 100%;
-    background: #DA7C4C;
+    background: #03BBC6;
     font-family: Satoshi, sans-serif;
     font-size: 1.5vw;
-    color: #FFFEE9;
+    color: #e4f8fa;
     --gap: 3vw;
     position: relative;
     display: flex;
@@ -386,23 +386,23 @@ a {
     font-family: Satoshi, sans-serif;
     font-weight: 700;
     font-size: 2.5vw;
-    color: #49581D;
+    color: #136070;
 }
 
 .view-all {
     line-height: 2.5vw;
-    color: #DA7C4C;
+    color: #03BBC6;
     font-family: Satoshi, sans-serif;
     font-size: 1vw;
     font-weight: 500;
     text-decoration: none;
-    border-bottom: #DA7C4C 2px solid;
+    border-bottom: #03BBC6 2px solid;
     padding-bottom: 1px;
 }
 
 .view-all:hover {
-    color: #FFD98D;
-    border-bottom: #FFD98D 2px solid;
+    color: #a0d1d3;
+    border-bottom: #a0d1d3 2px solid;
 }
 
 .title-container-se {
@@ -428,13 +428,15 @@ a {
 }
 
 .speaker-card img {
-    width: 100%;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
 }
 
 .speaker-card-name {
     width: fit-content;
     font-family: Satoshi, sans-serif;
-    color: #49581D;
+    color: #136070;
     font-weight: 500;
     font-size: 2vw;
     margin-top: 1vw;
@@ -455,6 +457,7 @@ a {
     margin: auto;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -469,7 +472,7 @@ a {
 .title-sponsor p {
     width: fit-content;
     font-family: Satoshi, sans-serif;
-    color: #49581D;
+    color: #136070;
     font-size: 1.7vw;
     font-weight: 500;
     text-align: center;
@@ -491,13 +494,13 @@ a {
 .all-sponsors {
     height: 8vw;
     max-width: 10vw;
-    border: 2px solid #DA7C4C;
+    border: 2px solid #03BBC6;
     border-radius: 3vw;
     margin: 2vw 2vw;
 }
 .sponsorType {
     font-family: Satoshi, sans-serif;
-    color: #49581D;
+    color: #136070;
     font-size: 1.2vw;
     font-weight: 600;
 
@@ -563,7 +566,7 @@ margin-top: 6%;
 
 .letstalk-text {
     font-family: Satoshi, sans-serif;
-    color: #49581d;
+    color: #136070;
     font-weight: bold;
     font-size: 3vw;
     position: absolute;
@@ -604,7 +607,7 @@ margin-top: 6%;
 }
 
 .letsTalk:hover .ltplus line {
-    stroke: #fffee9;
+    stroke: #e4f8fa;
 }
 
 .letsTalk:hover .letstalk-text {
@@ -633,7 +636,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #da7c4c;
+    background-color: #03BBC6;
     display: flex;
 }
 
@@ -651,7 +654,7 @@ footer {
 }
 
 .textbelowlogo {
-    color: #fffee9;
+    color: #e4f8fa;
     size: 100%;
     margin-top: 0px;
 }
@@ -665,7 +668,7 @@ footer {
     top: 33px;
     text-align: right;
     font-family: Satoshi, sans-serif;
-    color: #FFFEE9;
+    color: #e4f8fa;
 }
 
 .paraWithSwb {
@@ -733,7 +736,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #fffee9;
+    background-color: #e4f8fa;
 }
 
 .nav-menu {
@@ -750,11 +753,11 @@ a {
 .nav-link {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #fffee9;
+    color: #e4f8fa;
 }
 
 .nav-link:hover {
-    color: #ffd98d;
+    color: #a0d1d3;
 }
 
 .nav-logo {
@@ -770,7 +773,7 @@ a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #da7c4cd9;
+        background-color: #03BBC6;
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -803,11 +806,11 @@ a {
 }
 
 .Register:hover {
-    background-color: #ffd98d;
-    color: #fffee9;
+    background-color: #a0d1d3;
+    color: #e4f8fa;
     transition: all 0.1s ease-in;
 }
 
 .Register a:hover {
-    color: #fffee9;
+    color: #e4f8fa;
 }

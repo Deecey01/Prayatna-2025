@@ -15,13 +15,13 @@
 }
 
 body {
-    background-color: #fff5d3;
+    background-color: #e4f8fa;
 }
 
 .navbar {
     height: 15vh;
     width: 100vw;
-    background-color: #da7c4cd9;
+    background-color: #03BBC6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ body {
 
 .nav-items {
     margin: auto 32px auto 32px;
-    color: #fffee9;
+    color: #e4f8fa;
     font-size: 18px;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -50,18 +50,18 @@ body {
 
 .line {
     width: 33px;
-    background-color: #fffee9;
+    background-color: #e4f8fa;
     height: 3px;
     margin: 5px 3px;
 }
 
 .nav-items a {
     text-decoration: none;
-    color: #fffee9;
+    color: #e4f8fa;
 }
 
 .otherItemsThenRegister a:hover {
-    color: #ffd98d;
+    color: #a0d1d3;
 }
 
 .navbar-right {
@@ -129,7 +129,7 @@ body {
 .textInAboutUs {
     width: 300px;
     /* height: 200px; */
-    background-color: #ffd98d;
+    background-color: #50e7ef;
     position: absolute;
     left: 37.9%;
     top: 40%;
@@ -153,7 +153,7 @@ body {
     line-height: 30px;
     padding-top: 20px;
     padding-left: 23px;
-    color: #49581d;
+    color: #136070;
 }
 
 .swbBelowText {
@@ -162,15 +162,15 @@ body {
     line-height: 1.5;
     padding-top: 3%;
     padding-left: 23px;
-    color: #49581d;
+    color: #136070;
     font-size: 1.15vw;
     padding-bottom: 2em;
 }
 
 .middlepage {
     width: 100%;
-    height: 275vh;
-    background-color: #FFD98D;
+    height: 280vh;
+    background-color: #a0d1d3;
     position: absolute;
     top: 100vh;
     text-align: center;
@@ -182,7 +182,7 @@ body {
 .pastEvents {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 700;
-    color: #49581d;
+    color: #136070;
     font-size: 4vw;
     margin-top: 20px;
     padding-bottom: 4%;
@@ -193,13 +193,13 @@ body {
     font-family: Satoshi;
     font-weight: 400;
     font-size: 4.5vw;
-    color: #DA7C4C66;
+    color: #238599;
     padding: 4%;
     z-index: 10;
 }
 
 .middlepageItems:hover {
-    color: #FFFEE9;
+    color: #e4f8fa;
     transition: all;
     transition-duration: 0.6s;
     cursor: default;
@@ -358,7 +358,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #fffee9;
+    background-color: #e4f8fa;
 }
 
 .nav-menu {
@@ -375,11 +375,12 @@ a {
 .nav-link {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #fffee9;
+    color: #e4f8fa;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
-    color: #ffd98d;
+    color: #c6d5d6;
 }
 
 .nav-logo {
@@ -394,7 +395,7 @@ a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #da7c4cd9;
+        background-color: #03BBC6;
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -423,13 +424,13 @@ a {
 }
 
 .Register:hover {
-    background-color: #ffd98d;
-    color: #fffee9;
+    background-color: #66999d;
+    color: #e4f8fa;
     transition: all 0.1s ease-in;
 }
 
 .Register a:hover {
-    color: #fffee9;
+    color: #e4f8fa;
 }
 
 .mid-container {
@@ -446,7 +447,7 @@ a {
 }
 
 .footer-distributed {
-    background: #DA7C4C;
+    background: #05c4ce;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
