@@ -18,11 +18,6 @@
             margin: 0;
             background-color: #e4f8fa;
         }
-        
-        @font-face {
-            font-family: Satoshi;
-            src: url(./fonts/Satoshi-Variable.ttf);
-        }
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -32,6 +27,57 @@
             top:0;
             margin-bottom: 10vh;
         }
+        @media only screen and (max-width: 1135px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 5rem;
+                flex-direction: column;
+                background-color: #03BBC6;
+                width: 100%;
+                border-radius: 10px;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .nav-item {
+                margin: 2.5rem 0;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            .speakers{
+                top: 158vh;
+                transition: all 0.3s ease-in;
+            }
+        }
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #e4f8fa;
+        }
+        @font-face {
+            font-family: Satoshi;
+            src: url(./fonts/Satoshi-Variable.ttf);
+        }
+        
         .swiper {
             margin-top: -50vh;
             height: 300vh;
@@ -241,13 +287,12 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/book-swap.jpg);">
+                <div class="swiper-slide-img" style="background-image: url(./images/summit.png);">
                 </div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Book Swap</div>
-                        Share the joy of reading at the Prayatna 2023 Book Swap Event! Organised by the Academic Initiative Club, bring a book you love and exchange it for a new treasure. Let's spread the love of literature and make new friends! An opportunity for bibliophiles
-                        to connect by swapping their books. This will not only save money but also build connectedness in the community.
+                        <div class="swiper-slide-title">Pan-India College Welfare Summit</div>
+                        We are organizing the Pan North-East India Welfare Expo, where representatives from more than 50 colleges across North-East and East India will convene. This platform will facilitate discussions on critical student welfare issues, including security, attendance, and other challenges faced by students.
                         <br>
                         <br>
                         <!-- <div>
@@ -261,12 +306,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/quiz.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/comedy.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Quiz</div>
-                        Encouraging people to become more informed and aware of the various issues affecting their communities and the world. Get ready to test your knowledge and compete with the brightest minds! The Academic Initiative Club presents the Quiz Competition, happening
-                        on 18th February as part of Prayatna 2023. Join us from 3pm to 4pm for a fun and educational event with a prize worth 6k.
+                        <div class="swiper-slide-title">Comedy Night</div>
+                            Join us for an unforgettable evening filled with laughter, wit, and joy at the Comedy Night. Enjoy stellar performances while supporting a noble cause. Let's come together, laugh out loud, and make a difference!
                         <br><br>
                         <!-- <div>
                             Venue: Conference Hall 2 <br> Date: 18 Feb 2023 <br> Time: 3 PM onwards</div> -->
@@ -279,13 +323,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/debate.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/fooddonation.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Debates</div>
-                        An opportunity to share ideas and perspectives and learn more about different sides of an issue. Put your speaking skills to the test and join the academic debate. "The Rebuttal" is here, brought to you by the Academic Initiative Club as part of Prayatna
-                        2023. On 19th Feb at 2pm-3pm, express your views and thoughts on the topic: "Do extra-curricular activities help us in tackling academic pressure, or do they increase the pressure on us?" With a prize worth 8k, it's time to sharpen
-                        your arguments and show us what you got!
+                        <div class="swiper-slide-title">Food Donation Drive</div>
+                        We are organising a Food Donation Drive to support underserved communities in local slum areas. Our goal is to distribute 500 food packets, providing essential nourishment to individuals and families in need.
                         <br><br>
                         <!-- <div>
                             Venue: Conference Hall Lounge <br> Date: 19 Feb 2023 <br> Time: 2 PM onwards</div> -->
@@ -298,11 +340,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/bsfband.png);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/menstrual.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">BSF Band</div>
-                        To empower youth and promote selfless service, what can be better than the spirit of patriotism? Presenting to you a band performance by the BSF.
+                        <div class="swiper-slide-title">Menstrual Hygiene Drive</div>
+                        We are also organising a Menstrual Hygiene Drive to educate people in local slum areas. Our goal is to distribute 3500+ sanitary napkin packs and spread awareness related to menstrual hygiene.
                         <br><br>
                         <!-- <div>
                             Venue: MCH <br> Date: 17 Feb 2023 <br> Time: 6:45 PM onwards</div> -->
@@ -314,11 +356,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/komedy.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/samiksha.jpg);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Comedy night</div>
-                        Get ready to have your funny bone tickled! With funny anecdotes, and witty comments, this night will surely be a great stress buster.
+                        <div class="swiper-slide-title">Samiksha</div>
+                        Samiksha is a platform for discussions and knowledge sharing, focusing on women empowerment, social responsibility, and service-oriented initiatives. Featuring diverse speakers, it fosters innovative ideas and solutions to societal challenges.
                         <br><br>
                         <!-- <div>
                             Venue: Auditorium <br> Date: 19 Feb 2023 <br> Time: 4:30 PM onwards</div> -->
@@ -331,12 +373,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/hackathon.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/selfdefense.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Hackathon</div>
-                        A platform where participants from diverse backgrounds come together to brainstorm, develop, and prototype innovative solutions to various social issues. These solutions range from developing a mobile application to help people access resources in their
-                        communities to creating a website to help connect people with similar interests.
+                        <div class="swiper-slide-title">Self Defence Workshop</div>
+                        “Self defence workshop” session, for the girls of IITG and students of KV, aimed at providing techniques and awareness about what can be done at times of danger.
                         <br><br>
                         <!-- <div>
                             Venue: Conference Hall 3 <br> Date: 19 Feb 2023 <br> Time: 9 PM onwards</div> -->
@@ -350,11 +391,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/pwdtalent.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/zumba.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Ability Unleashed</div>
-                        These shows are used to promote community engagement as well as to raise funds for the organization. This will be a good source of motivation for everyone.
+                        <div class="swiper-slide-title">Zumba/Dance Workshop</div>
+                        Join our Zumba and Dance Session—a high-energy event for students, staff, and community members, including security guards and mess workers. Unwind, stay fit, and enjoy a refreshing break from daily workloads!
                         <br><br>
                         <!-- <div>
                             Venue: Mini Audi <br> Date: 19 Feb 2023 <br> Time: 1 PM - 4 PM</div> -->
@@ -367,12 +408,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/ap.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/yogaworkshop.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Acharya Prashant Session</div>
-                        A prominent social reformer and educator of true spirituality in the world today. He speaks strongly for female empowerment, protection of the natural world, compassion for animals, Vedantic wisdom, for living rightly, and campaigns against superstition.
-                        <br> He is an IIT-IIM alumnus, Ex-Civil Servant and has authored 100 books on the topics of Karma, Joy, Love, Marriage, Spirituality, & more. Join us in an intriguing session with him on
+                        <div class="swiper-slide-title">Yoga/Meditation Session</div>
+                        Join us for a rejuvenating Yoga and Meditation Session aimed at spreading awareness about the importance of mental and physical well-being. This session is designed to introduce participants to the transformative power of mindfulness and holistic health practices.
                         <br><br>
                         <!-- <div>
                             Venue: Auditorium <br> Date: 19 Feb 2023 <br> Time: 6 PM - 8 PM</div> -->
@@ -385,12 +425,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/oldagehome.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/abilityunleashed.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Old Age Home Visit</div>
-                        Visiting an old age home is a great way to give back to the community and create a meaningful experience for everyone involved. This event aims to bring joy to the elderly by engaging them in fun activities, creating lasting memories, and providing much-needed
-                        companionship.
+                        <div class="swiper-slide-title">Ability Unleashed</div>
+                        The NGO Ability Unleashed event is a platform dedicated to empowering and showcasing the talents of disabled individuals. Through this talent show, we provide them an opportunity to express their abilities, inspire others, and highlight the impact of NGOs working towards inclusivity and social change.
                         <br><br>
                         <!-- <div>
                             Venue: New Sac <br> Date: 15 Feb 2023 <br> Time: 6 PM to 9 PM</div> -->
@@ -403,12 +442,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/cyclothon.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/lanestalls.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Cyclothon</div>
-                        For spreading awareness about HIV/AIDS & other STDs among Campus Junta and to practice a healthy lifestyle, The Red Ribbon Club of the Students Welfare Board, IIT Guwahati will conduct "Cyclothon: A race to spread HIV/AIDS awareness" in PRAYATNA.Participants
-                        will also be given attractive merch and refreshments. We will also install interactive displays, to raise awareness about AIDS and HIV.
+                        <div class="swiper-slide-title">Lane Stalls</div>
+                        We are setting up 12+ stalls to empower the students of Guwahati by providing them with a platform to learn essential street skills, explore entrepreneurship, and showcase their hidden talents. This initiative encourages creativity, self-reliance, and hands-on learning in a dynamic, real-world setting.
                         <br><br>
                         <!-- <div>
                             Venue: Old Sac <br> Date: 18 Feb 2023 <br> Time: 6 AM</div> -->
@@ -421,11 +459,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/blooddonation.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/parody.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Blood Donation Camp</div>
-                        A blood donation camp in IITG in collaboration with NGOs as a small attempt to help save lives
+                        <div class="swiper-slide-title">Social Parody</div>
+                        The Inter-Hostel Social Parody Competition will bring together participants from across hostels to create and perform satirical content. Teams will craft humorous skits, videos, or performances parodying societal trends, issues, and popular culture. With an audience of 8,000+ from all hostels.
                         <br><br>
                         <!-- <div>
                             Venue: IITG Hospital <br> Date: 18 & 19 Feb 2023 <br> Time: 9 AM to 11 AM</div> -->
@@ -438,11 +476,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/selfdefence.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/hackathon.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Self Defence Workshop</div>
-                        The workshop typically includes both discussion and physical exercises that teach self-defense techniques. During the workshop, participants learn the basics of self-protection, such as assessing a situation and defending themselves physically if necessary.
+                        <div class="swiper-slide-title">Impact Hackathon</div>
+                        Impact Hackathon is a nationwide competition uniting bright minds to tackle socio-welfare challenges with tech-driven solutions. It fosters creativity, collaboration, and impactful problem-solving, providing a platform for young innovators to address societal issues. Top teams will showcase their ideas at IIT Guwahati during the fest.
                         <br><br>
                         <!-- <div>
                             Venue: Old Sac <br> Date: 18 & 19 Feb 2023 <br> Time: 9 AM to 11 AM</div> -->
@@ -455,12 +493,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/socialawareness.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/oldagehome.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Social Awareness Workshop</div>
-                        The Social Service Club, IIT Guwahati in collaboration with ‘The Buddha Institute’ brings to you, a "Social Awareness Workshop". Over the course of this workshop, you'll find a variety of Panel Discussions, sessions by Sector Leaders and Social Entrepreneurs,
-                        and Q&A sessions lined up. Don't miss this chance to learn about different social experiences, opportunity in the sector, and scope of professional engagement through their curriculum!
+                        <div class="swiper-slide-title">Old Age Home Visit</div>
+                        Our Old Age Home Visit is designed to bring joy to the elderly through engaging activities, companionship, and meaningful interactions. Along with creating lasting memories, we will teach life skills like pottery and bamboo crafting while celebrating a pre-Holi festivity, making the day special for them.
                         <br><br>
                         <!-- <div>
                             Venue: Conference Hall 4 <br> Date: 19 Feb 2023 <br> Time: 10 AM to 1 PM</div> -->
@@ -468,92 +505,6 @@
                             <a href="#" class="nav-link">Register</a>
                         </div> -->
 
-                        <div class="swiper-button">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/yoga.jpg);"></div>
-                <div class="swiper-slide-cont-wrapper">
-                    <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Yoga and meditation workshop</div>
-                        “Yoga is the solution for all the mental chaos and necessary for overall wellbeing.” A yoga workshop organized to assimilate peace in daily life of students.
-                        <br><br>
-                        <!-- <div>
-                            Venue: Yoga Hall <br> Date: 19 Feb 2023 <br> Time: 7 AM</div> -->
-                        <!-- <div class="linkContainer">
-                            <a href="https://forms.gle/yz2ZyvyMPcHzJ5qu9" class="nav-link">Register</a>
-                        </div> -->
-                        <div class="swiper-button">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/openmic.jpg);"></div>
-                <div class="swiper-slide-cont-wrapper">
-                    <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Open Mic</div>
-                        An open mic event to discuss and explore various social issues. Engaging conversations and debates about topics such as racism, poverty, sexism, and more. Everyone will be welcome to attend and share their perspectives and opinions.
-                        <br><br>
-                        <!-- <div>
-                            Venue: Swimming pool Area <br> Date: 17 Feb 2023 <br> Time: 9 PM to 11 PM</div> -->
-                        <div class="linkContainer">
-                            <a href="https://forms.gle/8kdpJzgbWjdMxZbY6" class="nav-link">Register</a>
-                        </div>
-                        <div class="swiper-button">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/speedmentoring.jpg);"></div>
-                <div class="swiper-slide-cont-wrapper">
-                    <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Speed Mentoring</div>
-                        During this program, you’ll have the opportunity to interact with and learn from an experienced senior for a quick 1-1 session. You’ll get to ask questions, gain valuable insights and build connections.
-                        <br> Note: This event is only open to first- and second-year bachelor's degree students.
-                        <br><br>
-                        <!-- <div>
-                            Venue: Conference Hall Lounge <br> Date: 19 Feb 2023 <br> Time: 10 AM to 12 AM</div> -->
-                        <!-- <div class="linkContainer">
-                            <a href="#" class="nav-link">Register</a>
-                        </div> -->
-                        <div class="swiper-button">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/facepainting.jpg);"></div>
-                <div class="swiper-slide-cont-wrapper">
-                    <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Face Painting</div>
-                        A fun workshop where volunteers will paint faces of participants as an attempt to promote lgbtq rights
-                        <br><br>
-                        <!-- <div>
-                            Venue: Conference Hall Lounge <br> Date: 19 Feb 2023 <br> Time: 2 PM</div> -->
-                        <!-- <div class="linkContainer">
-                            <a href="#" class="nav-link">Register</a>
-                        </div> -->
-                        <div class="swiper-button">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/samiksha.jpg);"></div>
-                <div class="swiper-slide-cont-wrapper">
-                    <div class="swiper-slide-cont">
-                        <div class="swiper-slide-title">Samiksha</div>
-                        A women empowerment workshop which will have an interactive session and a workshop on menstrual awareness by Project Baala.
-                        <br><br>
-                        <!-- <div>
-                            Venue: Mini Auditorium <br> Date: 18 Feb 2023 <br> Time: 2 PM - 5 PM</div> -->
-                        <!-- <div class="linkContainer">
-                            <a href="#" class="nav-link">Register</a>
-                        </div> -->
                         <div class="swiper-button">
                         </div>
                     </div>

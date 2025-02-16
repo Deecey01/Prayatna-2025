@@ -428,8 +428,8 @@ a {
 }
 
 .speaker-card img {
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
 }
 
@@ -457,6 +457,7 @@ a {
     margin: auto;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }

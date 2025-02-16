@@ -169,7 +169,7 @@ body {
 
 .middlepage {
     width: 100%;
-    height: 275vh;
+    height: 280vh;
     background-color: #a0d1d3;
     position: absolute;
     top: 100vh;
@@ -376,6 +376,7 @@ a {
     font-size: 1.2rem;
     font-weight: 500;
     color: #e4f8fa;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
