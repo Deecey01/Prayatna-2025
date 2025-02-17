@@ -8,7 +8,6 @@
     <title>Prayatna-IIT Guwahati</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="aboutUs.css" />
-    <link rel="stylesheet" href="Allevents.css" />
     <style>
         body {
             display: flex;
@@ -30,7 +29,7 @@
             padding: 1rem 1.5rem;
             opacity: 1;
             top:0;
-            margin-bottom: 10vh;
+            margin-bottom: 10vh;
         }
         .swiper {
             margin-top: -50vh;
@@ -204,6 +203,39 @@
             }
             .swiper .swiper-slide.active {
                 height: 37vw !important;
+            }
+        }
+        @media only screen and (max-width: 1135px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 5rem;
+                flex-direction: column;
+                background-color: #03BBC6;
+                width: 100%;
+                border-radius: 10px;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .nav-item {
+                margin: 2.5rem 0;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
             }
         }
     </style>
@@ -581,7 +613,7 @@
 
     </div>
 
-    <div class="footer-distributed">
+    <!-- <div class="footer-distributed">
         <div class="footer-left">
             <img src="images\prayatna_logo.png" alt="prayatna_logo" id="PrayatnaLogoOnLeft" />
             <div class="textBelowLogoOnLeft">
@@ -598,8 +630,8 @@
 
             <div class="footer-icons">
                 <a href="mailto:Prayatna@iitg.ac.in" class="logos_right" style="margin-right: 20px"><img src="images\emailpic.png" alt="emailLogo" /></a>
-                <!-- <a href="#" class="logos_right" style="margin-right: 20px"><img src="images\linkedIn.png" alt="linkedInLogo" /></a>
-                <a href="#" class="logos_right" style="margin-right: 20px"><img src="images\bepic.png" alt="beLogo" /></a> -->
+                 <a href="#" class="logos_right" style="margin-right: 20px"><img src="images\linkedIn.png" alt="linkedInLogo" /></a>
+                <a href="#" class="logos_right" style="margin-right: 20px"><img src="images\bepic.png" alt="beLogo" /></a> 
             </div>
 
             <p class="footer-company-about">
@@ -607,7 +639,7 @@
                 <span>prayatna@iitg.ac.in</span>
             </p>
         </div>
-    </div>
+    </div> -->
 
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
@@ -637,6 +669,15 @@
                     spaceBetween: 10
                 },
             }
+        });
+
+        // Toggle navbar on hamburger click
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
         });
     </script>
 </body>

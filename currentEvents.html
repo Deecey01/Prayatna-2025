@@ -106,7 +106,7 @@
         .prev,
         .next {
             cursor: pointer;
-            z-index: 100;
+            z-index: -100;
             position: absolute !important;
             top: 80%;
             transform: translateY(-50%);
@@ -217,7 +217,10 @@
             font-family: Satoshi;
             font-size: 1.2rem;
             font-weight: 500;
-            color: #e4f8fa;
+            color: #03BBC6;
+        }
+        .nav-link:hover {
+            color: #136070;
         }
         
         .linkContainer {
@@ -293,6 +296,10 @@
                     <div class="swiper-slide-cont">
                         <div class="swiper-slide-title">Pan-India College Welfare Summit</div>
                         We are organizing the Pan North-East India Welfare Expo, where representatives from more than 50 colleges across North-East and East India will convene. This platform will facilitate discussions on critical student welfare issues, including security, attendance, and other challenges faced by students.
+                        <br><br>
+                        <div class="linkContainer">
+                            <a href="summit.html" class="nav-link">Know More</a>
+                        </div>
                         <br>
                         <br>
                         <!-- <div>
@@ -532,7 +539,7 @@
 
     </div>
 
-    <div class="footer-distributed">
+    <!-- <div class="footer-distributed">
         <div class="footer-left">
             <img src="images\prayatna_logo.png" alt="prayatna_logo" id="PrayatnaLogoOnLeft" />
             <div class="textBelowLogoOnLeft">
@@ -549,8 +556,8 @@
 
             <div class="footer-icons">
                 <a href="mailto:Prayatna@iitg.ac.in" class="logos_right" style="margin-right: 20px"><img src="images\emailpic.png" alt="emailLogo" /></a>
-                <!-- <a href="#" class="logos_right" style="margin-right: 20px"><img src="images\linkedIn.png" alt="linkedInLogo" /></a>
-                <a href="#" class="logos_right" style="margin-right: 20px"><img src="images\bepic.png" alt="beLogo" /></a> -->
+                <a href="#" class="logos_right" style="margin-right: 20px"><img src="images\linkedIn.png" alt="linkedInLogo" /></a>
+                <a href="#" class="logos_right" style="margin-right: 20px"><img src="images\bepic.png" alt="beLogo" /></a>
             </div>
 
             <p class="footer-company-about">
@@ -558,7 +565,7 @@
                 <span>prayatna@iitg.ac.in</span>
             </p>
         </div>
-    </div>
+    </div> -->
 
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
@@ -588,6 +595,14 @@
                     spaceBetween: 10
                 },
             }
+        });
+        // Toggle navbar on hamburger click
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
         });
     </script>
 </body>
