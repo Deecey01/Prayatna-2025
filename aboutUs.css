@@ -633,6 +633,8 @@ a {
         font: bold 14px sans-serif;
         display: block;
         width: 100vw;
+        /* position: fixed;
+        bottom: 0; */
     }
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
