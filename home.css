@@ -57,10 +57,9 @@ body {
     height: 45px;
     margin-left: 128px;
 }
-@media only screen and (max-width:1153px) {
+@media only screen and (max-width:953px) {
     .Prayatna-logo{
-        margin-left: 2%;
-        height: 45px;
+        margin-left: 33%;
         transition: all 0.3s ease-in;
     }
 }
@@ -112,7 +111,7 @@ body {
 }
 #below-prayatna2 {
     font-family: Satoshi, sans-serif;
-    font-size: 1.1vw;
+    font-size: 2vw;
     opacity: 80%;
     font-weight: 400;
 }
